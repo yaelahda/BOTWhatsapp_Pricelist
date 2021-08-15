@@ -22,11 +22,8 @@
     "axios": "^0.21.0",
     "chalk": "^4.1.0",
     "lowdb": "^1.0.0",
-    "moment": "^2.29.1",
     "moment-timezone": "^0.5.31",
-    "node-fetch": "^2.6.1",
     "react": "^17.0.1",
-    "sastrawijs": "^1.0.3",
     "sharp": "^0.27.1"
   }
 }
