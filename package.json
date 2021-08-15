@@ -1,0 +1,32 @@
+{
+  "name": "BOTWhatsapp_Pricelist",
+  "version": "1.0.0",
+  "description": "Whatsapp Bot - Pricelist",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Yaelahda",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaelahda/BOTWhatsapp_Pricelist"
+  },
+  "bugs": {
+    "url": "https://github.com/yaelahda/BOTWhatsapp_Pricelist/issues"
+  },
+  "homepage": "https://github.com/yaelahda/BOTWhatsapp_Pricelist",
+  "license": "ISC",
+  "dependencies": {
+    "@open-wa/wa-automate": "^4.14.2",
+    "app-root-path": "^3.0.0",
+    "axios": "^0.21.0",
+    "chalk": "^4.1.0",
+    "lowdb": "^1.0.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.31",
+    "node-fetch": "^2.6.1",
+    "react": "^17.0.1",
+    "sastrawijs": "^1.0.3",
+    "sharp": "^0.27.1"
+  }
+}
