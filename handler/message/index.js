@@ -203,30 +203,8 @@ module.exports = msgHandler = async (client, message) => {
                     await client.sendText(from, "Hanya dapat dilakukan dalam Grup.")
                 }
                 break
+                
             //ADMIN UPDATE COMMANDS
-            case 'edit-namagrup':
-                if (!isAdminbot) return client.reply(from, fckadmin, id)
-                const editnamagrup = body.slice(15)
-                if(caridata && caridata.id === groupId){
-                    if (isGroupAdmins) {
-                        if (argz.length === 1) return client.reply(from, `untuk mengganti nama group, kirim perintah\n*${prefix}edit-namagrup [Text kamu]*`, id)
-                        db.get('data').find({id: groupId}).unset('nama').write()
-                        db.get('data').find({id: groupId}).assign({ nama: editnamagrup }).write()
-                        client.setGroupTitle(groupId, editnamagrup)
-                        await client.reply(from, `Berhasil Mengganti Nama Group Menjadi *${caridata.nama}*`, id)
-                    } else {
-                        client.reply(from,'Maaf kamu bukan admin di group ini', id)
-                    }
-                } else if (cariadmin && cariadmin.adminid === sender.id){
-                    if (argz.length === 1) return client.reply(from, `untuk mengganti nama group, kirim perintah\n*${prefix}edit-namagrup [Text kamu]*`, id)
-                    db.get('data').find({adminid: pengirim}).unset('nama').write()
-                    db.get('data').find({adminid: pengirim}).assign({ nama: editnamagrup }).write()
-                    client.setGroupTitle(cariadmin.id, editnamagrup)
-                    await client.reply(from, `Berhasil Mengganti Nama Group Menjadi *${cariadmin.nama}*`, id)
-                }else {
-                    await client.reply(from, sorry, id)
-                }
-                break
             case 'update-menu':
                 if (!isAdminbot) return client.reply(from, fckadmin, id)
                 const updatemenu = body.slice(13)
