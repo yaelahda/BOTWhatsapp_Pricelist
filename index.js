@@ -27,7 +27,7 @@ const start = (client = new Client()) => {
                         console.log('[CLIENT]', color(`Invited to Group. [ ${name} : ${ids.length}]`, 'yellow'))
                     }))
                     
-            client.onGlobalParicipantsChanged(async (event) => {
+            client.onGlobalParticipantsChanged(async (event) => {
         const host = await client.getHostNumber() + '@c.us'
         const gChat = await client.getChatById(event.chat)
         const { name } = gChat
