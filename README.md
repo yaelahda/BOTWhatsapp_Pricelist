@@ -40,6 +40,12 @@ Usage
 > npm start
 ```
 
+Fix Stuck on linux, install google chrome stable:
+```bash
+> wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+> sudo apt install ./google-chrome-stable_current_amd64.deb
+```
+
 ## Special Thanks to
 1. [`Open-Wa`](https://github.com/open-wa/wa-automate-nodejs)
 2. [`NoBadWord`](https://github.com/dandyraka/NoBadWord)
